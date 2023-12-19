@@ -1,0 +1,33 @@
+\usepackage[tmargin=2cm,rmargin=1in,lmargin=1in,margin=0.85in,bmargin=2cm,footskip=.2in]{geometry}
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{codecomment}{rgb}{0,0.6,0}
+\definecolor{codelinenumber}{rgb}{0.5,0.5,0.5}
+\definecolor{codestring}{rgb}{0.58,0,0.82}
+\definecolor{codebg}{rgb}{0.95, 0.95, 0.95}
+
+\lstset{
+  backgroundcolor=\color{codebg},
+  basicstyle=\footnotesize,
+  breakatwhitespace=true,
+  breaklines=true,
+  captionpos=b,
+  commentstyle=\color{codecomment},
+  escapeinside={\%*}{*)},
+  extendedchars=true,
+  frame=lines,
+  keepspaces=true,
+  keywordstyle=\color{blue},
+  numbers=left,
+  numbersep=10pt,
+  numberstyle=\tiny\color{codelinenumber},
+  rulecolor=\color{black},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  stepnumber=1,
+  stringstyle=\color{codestring},
+  tabsize=4,
+  captionpos=top
+}
