@@ -2,15 +2,31 @@
 
 \input{preamble.tex}
 
-\title{\Huge{Title}\\Subtitle}
-\author{\huge{Benedikt Zundel}}
-\date{}
+\title{Title}
+\author{Author}
+\date{Date}
 
 \begin{document}
 
-\maketitle
+\makeatletter
+\begin{titlepage}
+	\begin{center}
+		\vspace*{3cm}
+		\textbf{\Huge{\@title}}
 
-\newpage
+		\vspace{1.5cm}
+		\textbf{\@author}
+
+		\vspace{0.5cm}
+		\@date
+
+		
+		\vfill
+
+		%\includegraphics[width=0.4\textwidth]{logo.png}
+	\end{center}
+\end{titlepage}
+\makeatother
 
 \tableofcontents
 
@@ -20,3 +36,5 @@
 % \lstinputlisting[language=Python, caption="Something"]{demo.py}
 
 \end{document}
+
+
